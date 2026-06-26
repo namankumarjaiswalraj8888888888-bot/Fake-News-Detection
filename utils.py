@@ -49,7 +49,13 @@ SAMPLE_REAL_NEWS = """The Federal Reserve raised interest rates by 25 basis poin
 
 SAMPLE_FAKE_NEWS = """SHOCKING: Scientists discover that drinking bleach cures all known diseases! The mainstream media is hiding this from you because Big Pharma doesn't want you to know the truth. A secret report leaked from the CDC confirms that the government has been suppressing this miraculous cure for decades. Share this before they delete it! The globalists are terrified!"""
 def get_sample_news():
-    return {
-        "real": SAMPLE_REAL_NEWS,
-        "fake": SAMPLE_FAKE_NEWS
-    }
+    return [
+        {
+            "label": "📰 Real News",
+            "text": SAMPLE_REAL_NEWS
+        },
+        {
+            "label": "🚨 Fake News",
+            "text": SAMPLE_FAKE_NEWS
+        }
+    ]
