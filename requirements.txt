@@ -1,17 +1,5 @@
-# ────────────────────────────────────────────────
-# Fake News Detection System — Python Dependencies
-# Install with: pip install -r requirements.txt
-# ────────────────────────────────────────────────
-
-# Core ML & Data Science
-scikit-learn==1.4.0       # Machine learning (TF-IDF, Logistic Regression)
-pandas==2.1.4             # Data manipulation and CSV handling
-numpy==1.26.3             # Numerical computing
-
-# Web UI
-gradio==4.16.0            # Beautiful ML web interface
-
-# Utilities (usually pre-installed with Python)
-# pickle — built-in, no install needed
-# re     — built-in, no install needed
-# os     — built-in, no install needed
+gradio==4.16.0
+scikit-learn==1.4.2
+pandas==2.2.2
+numpy==1.26.4
+joblib==1.4.2
