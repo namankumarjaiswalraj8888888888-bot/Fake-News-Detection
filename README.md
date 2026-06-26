@@ -1,3 +1,14 @@
+---
+title: Fake News Detection
+emoji: 📰
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: 5.34.2
+python_version: 3.11
+app_file: app.py
+pinned: false
+---
 # 🔍 Fake News Detection System
 
 > An AI-powered web application that classifies news articles as **Real** or **Fake** using
