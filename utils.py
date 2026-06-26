@@ -48,3 +48,8 @@ def get_confidence_level(confidence: float) -> str:
 SAMPLE_REAL_NEWS = """The Federal Reserve raised interest rates by 25 basis points on Wednesday, its tenth increase since March 2022, as policymakers continue to battle persistent inflation. Fed Chair Jerome Powell stated that the central bank remains committed to returning inflation to its 2% target. Markets responded positively, with the S&P 500 gaining 0.9% following the announcement."""
 
 SAMPLE_FAKE_NEWS = """SHOCKING: Scientists discover that drinking bleach cures all known diseases! The mainstream media is hiding this from you because Big Pharma doesn't want you to know the truth. A secret report leaked from the CDC confirms that the government has been suppressing this miraculous cure for decades. Share this before they delete it! The globalists are terrified!"""
+def get_sample_news():
+    return {
+        "real": SAMPLE_REAL_NEWS,
+        "fake": SAMPLE_FAKE_NEWS
+    }
