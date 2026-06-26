@@ -16,7 +16,7 @@ import gradio as gr
 import numpy as np
 
 # ── Local imports ─────────────────────────────────────────────────────────────
-from utils import clean_text, get_confidence_label, get_sample_news
+from utils import clean_text, get_confidence_level, get_sample_news
 
 # ── Load trained model and vectorizer ────────────────────────────────────────
 MODEL_PATH = "model.pkl"
@@ -71,7 +71,7 @@ def predict_news(text: str):
     label = "✅ REAL NEWS" if is_real else "🚨 FAKE NEWS"
     css_class = "real-box" if is_real else "fake-box"
     emoji = "✅" if is_real else "🚨"
-    confidence_label = get_confidence_label(confidence)  # "High", "Medium", etc.
+    confidence_label = get_confidence_level(confidence)  # "High", "Medium", etc.
 
     # ── Build result HTML ─────────────────────────────────────────────────────
     result_html = f"""
